@@ -1,4 +1,5 @@
 <?php 
+//THEME FUNCTIONS
 
 function magasine_resources() {
     
