@@ -55,29 +55,6 @@ function fotorep_init() {
 }
 add_action('init', 'fotorep_init' );
 
-//Creates 5 paa bakka Custom Post Type 
-
-function paa_bakka_init() {
-    $args = array(
-    'label' => 'Fem På Bakka',
-    'public' => true,
-    'show_ui' => true,
-    'capability_type' => 'post',
-    'hierarchical' => false,
-    'query_var' => true,
-    'menu_icon' => 'dashicons-format-gallery',
-    'taxonomies' => array('category'),    
-    'supports' => array(
-    'title',
-    'editor',
-    'excerpt',
-    'author',
-    'thumbnail',)
-        );
-    register_post_type('fembakka', $args );
-}
-add_action('init', 'paa_bakka_init' );
-
 //Creates Fotoreportasje Slideshow Custom Post Type
 
 function fotorepslideshow_init() {
@@ -100,6 +77,29 @@ function fotorepslideshow_init() {
     register_post_type('fotorepslideshow', $args );
 }
 add_action('init', 'fotorepslideshow_init' );
+
+//Creates 5 paa bakka Custom Post Type 
+
+function fembakka_init() {
+    $args = array(
+    'label' => 'Fem På Bakka',
+    'public' => true,
+    'show_ui' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'query_var' => true,
+    'menu_icon' => 'dashicons-format-gallery',
+    'taxonomies' => array('category'),    
+    'supports' => array(
+    'title',
+    'editor',
+    'excerpt',
+    'author',
+    'thumbnail',)
+        );
+    register_post_type('fembakka', $args );
+}
+add_action('init', 'fembakka_init' );
 
 //Creates Videoreportasje Custom Post Type 
 
