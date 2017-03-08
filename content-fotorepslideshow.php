@@ -6,9 +6,9 @@ Description: fotoreportasje med slideshow på bunn
 get_header();
 
 if (have_posts()) :
-    while (have_posts()) : the_post(); ?>
+    while (have_posts()) : the_post();?>
 
-    <article class="post" id="post-single">
+    <article class="post" id="post-single1">
         
         <?php the_post_thumbnail('large-thumbnail'); ?>
         
@@ -40,16 +40,15 @@ if (have_posts()) :
 
 
                 <div class="content">    
-                <!---    <?php the_content(); ?> --->
+                   <?php the_content(); ?> 
                     <?php the_field('tekst1'); ?>
                 </div>
 
             </div>
         
         </div>    
-        
-    </article>
 
+</article>
     <div class="byline">
         
         <?php the_field('byline'); ?>
@@ -62,7 +61,7 @@ if (have_posts()) :
 
         <?php if ( function_exists( "get_yuzo_related_posts" ) ) { get_yuzo_related_posts(); } ?>
     
-    </div>
+    </div>      
 
 <?php
 
