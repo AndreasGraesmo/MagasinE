@@ -66,6 +66,16 @@ if (have_posts()) :
 
 <?php
 
+    endwhile;
+        
+    else :
+        echo '<p>No content found</p>';
+    
+    endif;
+?>
+
+<?php
+
 get_footer();
 
 ?>

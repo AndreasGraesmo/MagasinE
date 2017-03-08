@@ -127,7 +127,7 @@ add_action('init', 'video_rep_init' );
 
 function add_post_types_to_loop($query) {
     if ($query->is_main_query() && $query->is_front_page()) {
-        $query->set('post_type', array('post', 'fotorep', 'fembakka', 'videorep', 'fotorepslideshow'));
+        $query->set('post_type', array('post', 'fotorep', 'fotorepslideshow', 'fembakka', 'videorep'));
     }
 }
 
