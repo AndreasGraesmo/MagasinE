@@ -549,6 +549,47 @@ img {
   font-size: 30px;  
 }
 
+@media (min-width: 680px) {
+    
+.left-entry-content {
+    display: inline-block;
+    width:100%;
+    max-width: 1280px;
+    float: left;
+    color: #000;
+    margin-bottom: 70px;
+}
+
+.left-entry-content img{
+    float: left;
+    width:200px;
+    padding-right: 20px;
+    height:200px;
+    
+}
+    
+.right-entry-content {
+    display: inline-block;
+    width: 100%;
+    max-width: 1280px;
+    float: left;
+    margin-bottom: 70px;
+    
+    
+}
+
+.right-entry-content img{
+    width: 200px;
+    height:200px;
+    float: left;
+    padding-right: 20px; 
+}
+
+.image {
+        margin: 0;
+}
+    
+}
 
 @media (min-width: 1045px) {
 
