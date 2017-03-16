@@ -9,12 +9,18 @@ main {
     overflow: hidden;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
     max-width: 100%;
     overflow-x: hidden;
-    font-family: "helvetica neue", helvetica, arial, sans-serif; }
+    font-family: "helvetica neue", helvetica, arial, sans-serif; 
+    height:100%;
+}
 
 h1 {
     text-align: center; }
@@ -762,3 +768,37 @@ iframe {
 }
 
 /*MEDIA QUERY SLUTT*/
+
+/*
+*
+*
+*
+SINGLE.PHP 
+*
+*
+*
+*/
+
+.heroimage {
+    min-height: 480px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.herotext {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding:10px 50px;
+    background-color: rgba(0,0,0,0.48)
+}
+
+.herotext h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+}
+
+
