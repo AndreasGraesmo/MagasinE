@@ -37,6 +37,12 @@ if (have_posts()) :
                 </p>
 
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                
+                <div class="byline">
+        
+                <?php the_field('byline'); ?>
+            
+                </div>
 
 
                 <div class="content">    
@@ -193,12 +199,6 @@ if (have_posts()) :
 
         </div>
         
-    </div>
-    
-    <div class="byline">
-        
-        <?php the_field('byline'); ?>
-            
     </div>
 
     <div class="relevantarticles">
