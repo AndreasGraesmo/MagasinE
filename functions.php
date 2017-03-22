@@ -57,29 +57,6 @@ function fotorep_init() {
 }
 add_action('init', 'fotorep_init' );
 
-//Creates Fotoreportasje Slideshow Custom Post Type
-
-function fotorepslideshow_init() {
-    $args = array(
-    'label' => 'Fotoreportasje med Slideshow',
-    'public' => true,
-    'show_ui' => true,
-    'capability_type' => 'post',
-    'hierarchical' => false,
-    'query_var' => true,
-    'menu_icon' => 'dashicons-images-alt',
-    'taxonomies' => array('category'),    
-    'supports' => array(
-    'title',
-    'editor',
-    'excerpt',
-    'author',
-    'thumbnail',)
-        );
-    register_post_type('fotorepslideshow', $args );
-}
-add_action('init', 'fotorepslideshow_init' );
-
 //Creates 5 paa bakka Custom Post Type 
 
 function fembakka_init() {
