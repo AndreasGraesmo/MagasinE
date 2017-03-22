@@ -780,11 +780,15 @@ SINGLE.PHP
 */
 
 .heroimage {
-    min-height: 480px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+    overflow: hidden;
+    
+}
+
+.heroimage img{
+    display: block;
+    margin: 0 auto;
+    
 }
 
 .herotext {
@@ -792,13 +796,66 @@ SINGLE.PHP
     bottom: 0;
     color: #fff;
     padding:10px 50px;
-    background-color: rgba(0,0,0,0.48)
+    background-color: rgba(0,0,0,0.48);
+    display: none;
 }
 
 .herotext h2 {
     font-size: 50px;
     font-weight: 400;
     margin: 0;
+}
+
+.mobingresstitle {
+    display: block;
+}
+
+.mobtitle h2{
+    margin:0;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.mobingresstitle h4{
+    margin:0;
+    margin-top:5px;
+}
+
+@media (min-width: 640px) {
+    .herotext {
+        display: block;
+    }
+    
+    .herotext p {
+        margin:0 0;
+    }
+    
+    .herotext h2 {
+        font-size: 30px;
+    }
+    
+    .mobingress {
+        display: none;
+    }
+    
+    .mobtitle{
+        display: none;
+    }
+}
+
+@media (min-width: 1045px) {
+    
+    .herotext h2 {
+        font-size: 50px;
+    }
+    
+    .herotext p {
+        margin-top: 5px;
+    }
+    
+    
+    
+    
 }
 
 
