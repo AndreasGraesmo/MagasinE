@@ -34,6 +34,7 @@ function custom_excerpt_length() {
 
 add_filter('excerpt_length', 'custom_excerpt_length');
 
+
 // Fotorepotasje custom post type
 function fotorep_init() {
     $args = array(
