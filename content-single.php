@@ -10,7 +10,8 @@ if (have_posts()) :
 
     <article class="post" id="post-single1">
         
-        <div <?php if ( get_field('hero_img') ) { echo 'style="background-image: url(' . get_field('hero_img') . ')"'; } ?> class="heroimage">
+        <div class="heroimage">
+            <?php the_post_thumbnail('large-thumbnail'); ?>
       <div class="herotext">
 	<h2><?php the_title(); ?></h2>
 	<p><?php the_field('ingress'); ?></p>
@@ -41,10 +42,18 @@ if (have_posts()) :
             <div id="single-fotorepotasje" class="content-wrapper">
                 <p class="post-info"><?php the_category( ' ' ); ?> <?php the_time('d M, Y'); ?> <br>
                 </p>
-
                 
+               <div class="mobtitle"> <h2><?php the_title(); ?></h2></div>
 
+                <div class="byline">
+        
+        <?php the_field('byline'); ?>
+            
+    </div>
 
+<div class="mobingress">
+   <h4><?php the_field('ingress'); ?></h4>
+                </div>
                 <div class="content">    
                    <?php the_content(); ?> 
                     <?php the_field('tekst1'); ?>
@@ -55,11 +64,7 @@ if (have_posts()) :
         </div>    
 
 </article>
-    <div class="byline">
-        
-        <?php the_field('byline'); ?>
-            
-    </div>
+    
 
     <div class="relevantarticles">
 

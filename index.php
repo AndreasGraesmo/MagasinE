@@ -21,7 +21,12 @@ if (have_posts()) :
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 
-            <?php the_excerpt(); ?>
+             <?php if(!empty($post->post_excerpt)) {
+     //This post have an excerpt, let's display it
+     the_excerpt();
+ } else {
+     // This post have no excerpt
+ } ?> 
 
 
         </article>
@@ -45,7 +50,12 @@ if (have_posts()) :
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 
-            <?php the_excerpt(); ?>
+             <?php if(!empty($post->post_excerpt)) {
+     //This post have an excerpt, let's display it
+     the_excerpt();
+ } else {
+     echo '<p>Test</p>';
+ } ?> 
 
 
         </article>
