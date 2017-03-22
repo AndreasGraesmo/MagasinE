@@ -821,6 +821,14 @@ SINGLE.PHP
     margin-top:5px;
 }
 
+.slideshow {
+    width: 100%;
+}
+
+.slideshow:empty {
+    display: none;
+}
+
 @media (min-width: 640px) {
     .herotext {
         display: block;

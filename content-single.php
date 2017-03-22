@@ -61,7 +61,9 @@ if (have_posts()) :
 
             </div>
         
-        </div>    
+        </div> 
+        
+<div class="slideshow"></div>
 
 </article>
     
