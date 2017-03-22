@@ -816,7 +816,7 @@ SINGLE.PHP
     font-size: 30px;
 }
 
-.mobingresstitle h5{
+.mobingresstitle h4{
     margin:0;
     margin-top:5px;
 }
@@ -833,6 +833,14 @@ SINGLE.PHP
     .herotext h2 {
         font-size: 30px;
     }
+    
+    .mobingress {
+        display: none;
+    }
+    
+    .mobtitle{
+        display: none;
+    }
 }
 
 @media (min-width: 1045px) {
@@ -845,9 +853,7 @@ SINGLE.PHP
         margin-top: 5px;
     }
     
-    .mobingress {
-        display: none;
-    }
+    
     
     
 }

@@ -51,8 +51,8 @@ if (have_posts()) :
             
     </div>
 
-<div class="mobingresstitle">
-   <h5><?php the_field('ingress'); ?></h5>
+<div class="mobingress">
+   <h4><?php the_field('ingress'); ?></h4>
                 </div>
                 <div class="content">    
                    <?php the_content(); ?> 
