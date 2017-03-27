@@ -65,7 +65,6 @@ if (have_posts()) :
         
         </div> 
         
-<div class="slideshow"></div>
         <?php the_field("slideshow"); ?>
 </article>
     
