@@ -13,13 +13,16 @@
         
     </header>
         
-        <div id="fortekst">
+    <div class=ingress>    
     
-    <h4><?php the_field('ingress'); ?></h4>
+    <h5><?php the_field('ingress'); ?></h5>
+        
+    </div>
+    
+    <div class=byline>
             
     <p><?php the_field('byline'); ?></p>        
-        
-            
+              
     </div>
     
     

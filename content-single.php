@@ -45,15 +45,17 @@ if (have_posts()) :
                 
                <div class="mobtitle"> <h2><?php the_title(); ?></h2></div>
 
+                
+
+<div class="mobingress">
+   <h5><?php the_field('ingress'); ?></h5>
+                </div>
+                
                 <div class="byline">
         
         <?php the_field('byline'); ?>
             
     </div>
-
-<div class="mobingress">
-   <h4><?php the_field('ingress'); ?></h4>
-                </div>
                 <div class="content">    
                    <?php the_content(); ?> 
                     <?php the_field('tekst1'); ?>
