@@ -11,11 +11,25 @@
         <h1 class="entry-title"><?php the_title(); ?></h1>
         
     </header>
+    
+    
+
+<div class="ingress">
+   <h4><?php the_field('ingress'); ?></h4>
+                </div>
+    
+    <div class="byline">
+        
+        <?php the_field('byline'); ?>
+            
+    </div>
+                
         
         <div id=fotowrap>
             
          <div class="left-entry-content" >  
-              <div class="image">
+              
+             <div class="image">
     <?php if( get_field('image1') ): ?>
 
 	   <img src="<?php the_field('image1'); ?>"  />
@@ -23,8 +37,10 @@
              <?php endif; ?>
                   
              </div>
+            
              <div class="tekst">
-             <h3><?php the_field('navn1'); ?></h3>
+             
+            <h3><?php the_field('navn1'); ?></h3>
             
              <p><?php the_field('tekst1'); ?></p>
                  
