@@ -12,9 +12,9 @@ if (have_posts()) :
 
     <?php if ( $first ): ?>
     <div class="featured">
-        <article class="post">
+        <article class="post" id="hoverhdbilde">
 
-            <?php the_post_thumbnail('large-thumbnail'); ?>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large-thumbnail'); ?></a>
 
             <p class="post-info"><?php the_category( ' ' ); ?> <?php the_time('d M, Y'); ?></p>
 
@@ -41,9 +41,9 @@ if (have_posts()) :
     <div class="post-list">
     <?php endif; ?>
 
-        <article class="under-post">
+        <article class="under-post" id="hoverpostbilder">
 
-            <?php the_post_thumbnail('small-thumbnail'); ?>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
 
             <p class="post-info"><?php the_category( ' ' ); ?> <?php the_time('d M, Y'); ?></p>
 

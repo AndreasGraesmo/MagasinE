@@ -199,6 +199,8 @@ if (have_posts()) :
 
         </div>
         
+        <?php the_field("slideshow"); ?>
+
     </div>
 
     <div class="relevantarticles">
