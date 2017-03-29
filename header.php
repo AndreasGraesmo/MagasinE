@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     
     <script type="text/javascript">
+        
     $(document).ready(function() {
         
         function mobshow() {
@@ -37,8 +38,6 @@
         });
         
     });
-    
-        
     
     </script>
 
