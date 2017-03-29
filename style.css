@@ -451,6 +451,24 @@ img {
     
 }
 
+/* Byline styles */
+.byline {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* Ingress styles */
+.ingress {
+    display: block;
+}
+
+.ingress h5{
+    margin:0;
+    margin-top:5px;
+    font-size: 1em;
+}
+
+
 /* Relevante Artikler på bunn */
 
 #r-artikler-tekst {
@@ -736,22 +754,6 @@ img {
 /*
 /* STARTER HER */
 
-#fortekst {
-    width:100%;
-}
-
-#fortekst h4 {
-    font-weight: 500;
-    font-size:16px;
-    margin: 0 0 5px 0;
-    display: inline-block;
-}
-
-#fortekst p {
-    font-size: 15px;
-    margin:0 0 10px 0;
-}
-
 #video {
     width: 100%;
 }
@@ -828,7 +830,7 @@ SINGLE.PHP
     margin: 0;
 }
 
-.mobingresstitle {
+.mobingress {
     display: block;
 }
 
@@ -838,9 +840,10 @@ SINGLE.PHP
     font-size: 30px;
 }
 
-.mobingresstitle h4{
+.mobingress h5{
     margin:0;
     margin-top:5px;
+    font-size: 1em;
 }
 
 @media (min-width: 640px) {
