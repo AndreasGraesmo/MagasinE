@@ -18,9 +18,9 @@
     function mobshow() {
         $("#submenu").toggleClass("mobmenushow");
     }
-        
+        </script>
     
-    </script>
+    
 
 </head>
     
