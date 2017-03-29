@@ -15,7 +15,7 @@
         
     <div class=ingress>    
     
-    <h5><?php the_field('ingress'); ?></h5>
+    <h5><?php the_field('tekst1'); ?></h5>
         
     </div>
     
