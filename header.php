@@ -29,7 +29,6 @@
             
         });
         
-
         $('.under-post').hover(function(){
             $('.under-post a').css("color", "black");    
         },function(){
