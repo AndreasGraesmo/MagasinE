@@ -23,10 +23,10 @@ if (have_posts()) :
 
              <?php if(!empty($post->post_excerpt)) {
      //This post have an excerpt, let's display it
-     the_excerpt();
+    the_excerpt();
  } else {
-     // This post have no excerpt
- } ?> 
+     echo  custom_field_excerpt();
+ } ?>  
 
 
         </article>
@@ -52,9 +52,9 @@ if (have_posts()) :
 
              <?php if(!empty($post->post_excerpt)) {
      //This post have an excerpt, let's display it
-     the_excerpt();
+    the_excerpt();
  } else {
-     echo '<p>Test</p>';
+     echo  custom_field_excerpt();
  } ?> 
 
 

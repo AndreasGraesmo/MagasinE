@@ -28,11 +28,19 @@ function MagasinETema_setup() {
 add_action('after_setup_theme','MagasinETema_setup');
 
 // Customize excerpt word count length
-function custom_excerpt_length() {
-    return 25;
+function custom_field_excerpt() {
+    global $post;
+    $text = get_field('tekst1');
+    if ( 'tekst1' != $text ) {
+        $text = strip_shortcodes( $text );
+        $text = apply_filters('the_content', $text);
+        $text = str_replace(']]>', ']]>', $text);
+        $excerpt_length = 20; // 20 words
+        $excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
+        $text = wp_trim_words( $text, $excerpt_length, $excerpt_more );
+    }
+    return apply_filters('the_excerpt', $text);
 }
-
-add_filter('excerpt_length', 'custom_excerpt_length');
 
 
 // Fotorepotasje custom post type
