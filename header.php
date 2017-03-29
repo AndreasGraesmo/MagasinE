@@ -20,11 +20,6 @@
         
         function mobshow() {
         $("#submenu").toggleClass("mobmenushow");
-<<<<<<< HEAD
-    }
-        </script>
-    
-=======
         };
         
         $('.post').hover(function(){
@@ -34,11 +29,18 @@
             
         });
         
+        $('.under-post').hover(function(){
+            $('.under-post a').css("color", "black");    
+        },function(){
+            $('.under-post a').css("color", "blue");
+            
+        });
+        
     });
     
         
->>>>>>> master
     
+    </script>
 
 </head>
     
