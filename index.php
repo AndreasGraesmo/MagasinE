@@ -52,7 +52,7 @@ if (have_posts()) :
 
              <?php if(!empty($post->post_excerpt)) {
      //This post have an excerpt, let's display it
-    the_excerpt();
+    echo get_the_excerpt(); ?> <a href="<?php the_permalink();?>">[...]</a><?php
  } else {
      echo  custom_field_excerpt();
  } ?> 

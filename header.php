@@ -13,13 +13,31 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     
-    <script type="text/javascript">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     
-    function mobshow() {
+    <script type="text/javascript">
+    $(document).ready(function() {
+        
+        function mobshow() {
         $("#submenu").toggleClass("mobmenushow");
+<<<<<<< HEAD
     }
         </script>
     
+=======
+        };
+        
+        $('.post').hover(function(){
+            $('.post a').css("color", "black");    
+        },function(){
+            $('.post a').css("color", "blue");
+            
+        });
+        
+    });
+    
+        
+>>>>>>> master
     
 
 </head>
