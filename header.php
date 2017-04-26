@@ -17,27 +17,9 @@
     
     <script type="text/javascript">
         
-    $(document).ready(function() {
-        
         function mobshow() {
         $("#submenu").toggleClass("mobmenushow");
         };
-        
-        $('.post').hover(function(){
-            $('.post a').css("color", "black");    
-        },function(){
-            $('.post a').css("color", "blue");
-            
-        });
-        
-        $('.under-post').hover(function(){
-            $('.under-post a').css("color", "black");    
-        },function(){
-            $('.under-post a').css("color", "blue");
-            
-        });
-        
-    });
     
     </script>
 
