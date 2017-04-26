@@ -17,27 +17,9 @@
     
     <script type="text/javascript">
         
-    $(document).ready(function() {
-        
-        function mobshow() {
+    function mobshow() {
         $("#submenu").toggleClass("mobmenushow");
         };
-        
-        $('.post').hover(function(){
-            $('.post a').css("color", "black");    
-        },function(){
-            $('.post a').css("color", "blue");
-            
-        });
-        
-        $('.under-post').hover(function(){
-            $('.under-post a').css("color", "black");    
-        },function(){
-            $('.under-post a').css("color", "blue");
-            
-        });
-        
-    });
     
     </script>
 
@@ -77,6 +59,7 @@
                 <!-----END OF SUBMENU SEARCH------>
             
             <nav class="mobile-nav">
+                
             
                 <?php
 
@@ -87,6 +70,8 @@
                 ?>
 
                 <?php wp_nav_menu(  $args ); ?>
+                
+               
               
             </nav>
                 
@@ -98,7 +83,7 @@
         <header class="site-header">
             
             <!-- hd-search -->
-            <div class="hd-search">
+            <!-- <div class="hd-search">
             
                 <?php get_search_form(); ?>
             
@@ -113,6 +98,7 @@
                 <!--<h5><?php bloginfo('description'); ?></h5> -->
             
             <nav class="site-nav">
+                
             
                 <?php
 
@@ -125,5 +111,6 @@
                 <?php wp_nav_menu(  $args ); ?>
             
             </nav>
+            
 
         </header><!-- /site-header -->
