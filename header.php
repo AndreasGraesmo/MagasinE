@@ -17,7 +17,9 @@
     
     <script type="text/javascript">
         
-        function mobshow() {
+
+    function mobshow() {
+
         $("#submenu").toggleClass("mobmenushow");
         };
     
@@ -59,6 +61,7 @@
                 <!-----END OF SUBMENU SEARCH------>
             
             <nav class="mobile-nav">
+                
             
                 <?php
 
@@ -69,6 +72,8 @@
                 ?>
 
                 <?php wp_nav_menu(  $args ); ?>
+                
+               
               
             </nav>
                 
@@ -80,7 +85,7 @@
         <header class="site-header">
             
             <!-- hd-search -->
-            <div class="hd-search">
+            <!-- <div class="hd-search">
             
                 <?php get_search_form(); ?>
             
@@ -95,6 +100,7 @@
                 <!--<h5><?php bloginfo('description'); ?></h5> -->
             
             <nav class="site-nav">
+                
             
                 <?php
 
@@ -107,5 +113,6 @@
                 <?php wp_nav_menu(  $args ); ?>
             
             </nav>
+            
 
         </header><!-- /site-header -->

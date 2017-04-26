@@ -120,4 +120,14 @@ function add_post_types_to_loop($query) {
 
 
 add_action('pre_get_posts', 'add_post_types_to_loop');
+
+function add_search_to_wp_menu ( $items, $args ) {
+	if( 'primary' === $args -> theme_location ) {
+$items .= '<li class="menu-item menu-item-search">';
+$items .= '<form method="get" class="menu-search-form" action="' . get_bloginfo('home') . '/"><p><input class="text_input" type="text" value="Søk på MagasinE" name="s" id="s" onfocus="if (this.value == \'Søk på MagasinE\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Søk på MagasinE\';}" /></p></form>';
+$items .= '</li>';
+	}
+return $items;
+}
+add_filter('wp_nav_menu_items','add_search_to_wp_menu',10,2);
 ?>
