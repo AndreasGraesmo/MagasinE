@@ -13,12 +13,31 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     
-    <script type="text/javascript">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     
-    function mobshow() {
-        $("#submenu").toggleClass("mobmenushow");
-    }
+    <script type="text/javascript">
         
+    $(document).ready(function() {
+        
+        function mobshow() {
+        $("#submenu").toggleClass("mobmenushow");
+        };
+        
+        $('.post').hover(function(){
+            $('.post a').css("color", "black");    
+        },function(){
+            $('.post a').css("color", "blue");
+            
+        });
+        
+        $('.under-post').hover(function(){
+            $('.under-post a').css("color", "black");    
+        },function(){
+            $('.under-post a').css("color", "blue");
+            
+        });
+        
+    });
     
     </script>
 
