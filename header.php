@@ -17,11 +17,9 @@
     
     <script type="text/javascript">
         
-<<<<<<< HEAD
+
     function mobshow() {
-=======
-        function mobshow() {
->>>>>>> master
+
         $("#submenu").toggleClass("mobmenushow");
         };
     
