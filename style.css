@@ -59,6 +59,10 @@ div.container {
     margin-bottom: 30px;
 }
 
+.post:hover a, .under-post:hover a {
+    color: #F08001;
+}
+
 /* under-post Layout */
 .post-list {
     float: left;
@@ -403,12 +407,13 @@ div.hd-search input:focus {
     margin: 0; }
 
 .site-header nav ul li a:hover {
-    background-color: #ECECEC; }
+    background-color: #ECECEC;
+    color: #F08001; }
 
 .site-header nav ul li.current-menu-item a:link,
 .site-header nav ul li.current-menu-item a:visited {
-    background-color: #006ec3;
-    color: #FFF; }
+    background-color: #ECECEC;
+    color: #F08001; }
 
 /* Site Footer Menu */
 @media (min-width: 601px) {
@@ -434,12 +439,13 @@ div.hd-search input:focus {
     margin: 0; }
 
 .site-footer nav ul li a:hover {
-    background-color: #ECECEC; }
+    background-color: #ECECEC;
+    color: #F08001; }
 
 .site-footer nav ul li.current-menu-item a:link,
 .site-footer nav ul li.current-menu-item a:visited {
-    background-color: #006ec3;
-    color: #FFF; }
+    background-color: #ECECEC;
+    color: #F08001; }
 
 /* post tekst design, hovedside */
 .post-info, .post-info a {
