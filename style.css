@@ -552,6 +552,13 @@ img {
     max-width: 1280px;
     max-height: 800px;
     margin: 0 auto;
+    
+}
+
+.stortbilde-wrapper p {
+    margin:8px 20px 0 20px;
+    font-size: 0.9em;
+    font-style: italic;
 }
 
 .sidebarcontent-wrapper {
