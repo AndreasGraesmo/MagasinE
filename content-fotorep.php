@@ -63,6 +63,7 @@ if (have_posts()) :
 <div class="stortbilde-wrapper">
 
     <img src="<?php the_field('stortbilde'); ?>" class="fullscreenbilde" />
+    <p> <?php the_field('bildetekst1'); ?></p>
     
 </div>
 
@@ -118,6 +119,7 @@ if (have_posts()) :
 <div class="stortbilde-wrapper">
 
     <img src="<?php the_field('stortbilde2'); ?>" class="fullscreenbilde" />
+    <p> <?php the_field('bildetekst2'); ?></p>
 
 </div>
     
@@ -163,7 +165,7 @@ if (have_posts()) :
     <div class="stortbilde-wrapper">
 
         <img src="<?php the_field('stortbilde3'); ?>" class="fullscreenbilde" />
-        
+        <p> <?php the_field('bildetekst3'); ?></p>
     </div>
 
 <?php endif; ?>
