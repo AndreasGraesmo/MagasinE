@@ -560,6 +560,13 @@ img {
     max-width: 1280px;
     max-height: 800px;
     margin: 0 auto;
+    
+}
+
+.stortbilde-wrapper p {
+    margin:8px 20px 0 20px;
+    font-size: 0.9em;
+    font-style: italic;
 }
 
 .sidebarcontent-wrapper {
@@ -871,7 +878,7 @@ SINGLE.PHP
     position: absolute;
     bottom: 0;
     color: #fff;
-    padding:10px 0 10px 50px;
+    padding:10px 0 30px 50px;
     background-color: rgba(0,0,0,0.48);
     display: none;
     width: 100%;
@@ -931,6 +938,8 @@ SINGLE.PHP
     .herotext p {
         margin-top: 5px;
         margin-right: 100px;
+        font-size: 1.1em;
+        line-height: 1.5em;
         
     }
     
