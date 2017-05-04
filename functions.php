@@ -42,6 +42,16 @@ function custom_field_excerpt() {
     return apply_filters('the_excerpt', $text);
 }
 
+function wpdocs_custom_excerpt_length( $length ) {
+    return 50;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+function wpdocs_excerpt_more( $more ) {
+    return ' ';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
 
 // Fotorepotasje custom post type
 function fotorep_init() {

@@ -33,7 +33,7 @@ if (have_posts()) :
             </div>
 
             <div id="single-fotorepotasje" class="content-wrapper">
-                <p class="post-info"><?php the_category( ' ' ); ?> <?php the_time('d M, Y'); ?> <br>
+                <p class="post-info"><?php the_category( ' / ' ); ?> <?php the_time('d M, Y'); ?> <br>
                 </p>
 
                 <h2><?php the_title(); ?></h2>
