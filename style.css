@@ -25,6 +25,11 @@ body {
 h1 {
     text-align: center; }
 
+h2 {
+    margin-bottom: -1px;
+    margin-top: 3px;
+}
+
 a:link,
 a:visited {
 	color: #2f2f2f;
@@ -474,8 +479,7 @@ div.hd-search input:focus {
     text-decoration: none; }
 
 .post {
-    margin-top: 30px;
-    
+    margin-top: 30px;  
 }
 
 
@@ -491,6 +495,10 @@ img {
 .byline {
     font-style: italic;
     margin: 0 0 30px 0;
+    color:#8e8e8e;
+    max-height: 5px;
+    font-size: 14px;
+    margin-bottom: 18px;
 }
 
 /* Ingress styles */
@@ -594,6 +602,14 @@ img {
 
 .sitat:empty {
     display: none;
+}
+
+.post-info {
+    letter-spacing: 1px;
+}
+
+#single-fotorepotasje p a {
+    color: #F08001; 
 }
 
 /*Fem på bakka CSS
