@@ -16,7 +16,7 @@
 
         </footer>
 
-        <div id="credz">Made by Borderless UB &copy; 2016 - 2017</div>
+        <div id="credz">Made by Borderless UB &copy; 2016–2017</div>
 
     </div> <!-- container -->
 

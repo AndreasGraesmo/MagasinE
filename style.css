@@ -36,9 +36,15 @@ a:visited {
 text-decoration: none;
 transition: 0.5s ease}
 
+.page-post {
+    width: 600px;
+}
+
 /*a:hover {
     color:skyblue;
 } */
+
+
 
 p {
 	line-height: 1.65em; }
@@ -119,6 +125,14 @@ article.under-post {
 
 #hoverhdbilde img:hover, #hoverpostbilder img:hover {
     opacity: 0.8;
+}
+
+#hoverhdbilde p {
+    margin-top: 0;
+}
+
+#hoverpostbilder p {
+    margin-top: 0;
 }
 
 /* Header */
