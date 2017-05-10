@@ -40,7 +40,7 @@ if (have_posts()) :
             </div>
 
             <div id="single-fotorepotasje" class="content-wrapper">
-                <p class="post-info"><?php the_category( ' ' ); ?> <?php the_time('d M, Y'); ?> <br>
+                <p class="post-info"><?php the_category( ' ' ); ?> &nbsp;<?php the_time('d M, Y'); ?> <br>
                 </p>
                 
                <div class="mobtitle"> <h2><?php the_title(); ?></h2></div>
@@ -57,7 +57,7 @@ if (have_posts()) :
             
     </div>
                 <div class="content">    
-                   <?php the_content(); ?> 
+                    <?php the_content(); ?> 
                     <?php the_field('tekst1'); ?>
                 </div>
 
