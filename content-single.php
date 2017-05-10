@@ -48,7 +48,7 @@ if (have_posts()) :
                 
 
 <div class="mobingress">
-   <h5><?php the_field('ingress'); ?></h5>
+   <h5><?php the_field('tekst1'); ?></h5>
                 </div>
                 
                 <div class="byline">
@@ -58,7 +58,7 @@ if (have_posts()) :
     </div>
                 <div class="content">    
                     <?php the_content(); ?> 
-                    <?php the_field('tekst1'); ?>
+                    <?php the_field('tekst1a'); ?>
                 </div>
 
             </div>
