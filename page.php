@@ -8,7 +8,7 @@ if (have_posts()) :
 
     <article class="post">
         
-        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         
         <?php the_content(); ?>
         
@@ -24,17 +24,6 @@ if (have_posts()) :
     endif;
 ?>
 </div>
-    
-    <!--- Ads divs -->
-    <div class="ads">
-        <?php 
-        
-        include "longad.php";
-        include "smallad.php";
-        
-        ?>
-    </div>
-    <!--- /Ads divs -->
     
 </div>
 <?php get_footer();?>
