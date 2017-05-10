@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    text-align: center; }
+    }
 
 h2 {
     margin-bottom: -1px;
@@ -509,7 +509,8 @@ img {
 .ingress h5{
     margin:0;
     margin-top:5px;
-    font-size: 1em;
+    font-size: 1.1em;
+    line-height: 1.5em;
 }
 
 
@@ -571,6 +572,7 @@ img {
 
 .sidebarcontent-wrapper {
     overflow: hidden;
+    margin-bottom: 38px;
 }
 .container:empty {
     display: none;
@@ -620,6 +622,12 @@ img {
 
 #fotowrap {
     overflow: hidden;
+}
+
+.ingress p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-weight: bold;
 }
 
 .right-entry-content {
@@ -820,7 +828,15 @@ img {
 iframe {
     width:100%;
     height: 200px;
+    margin-top: 12px;
 }
+
+h4 {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+
 
 @media (min-width: 660px) {
     #fortekst {
@@ -914,6 +930,7 @@ SINGLE.PHP
     .herotext p {
         margin:0 0;
         width:87%;
+        font-size:1.1em;
     }
     
     .herotext h2 {
