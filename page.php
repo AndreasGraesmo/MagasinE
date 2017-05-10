@@ -25,16 +25,7 @@ if (have_posts()) :
 ?>
 </div>
     
-    <!--- Ads divs -->
-    <div class="ads">
-        <?php 
-        
-        include "longad.php";
-        include "smallad.php";
-        
-        ?>
-    </div>
-    <!--- /Ads divs -->
+    
     
 </div>
 <?php get_footer();?>
