@@ -44,10 +44,14 @@ if (have_posts()) :
             
                 </div>
 
+                <div class=ingress>
+                    <p><?php the_field('tekst1'); ?> </p>
+                
+                </div>
 
                 <div class="content">    
                 <!---    <?php the_content(); ?> --->
-                    <?php the_field('tekst1'); ?>
+                    <?php the_field('tekst1a'); ?>
                 </div>
 
             </div>

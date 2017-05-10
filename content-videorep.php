@@ -15,7 +15,7 @@
         
     <div class=ingress>    
     
-    <h5><?php the_field('tekst1'); ?></h5>
+    <p><?php the_field('tekst1'); ?></p>
         
     </div>
     <p class="post-info"><?php the_category( ' ' ); ?> &nbsp;<?php the_time('d M, Y'); ?> <br>

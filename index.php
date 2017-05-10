@@ -16,7 +16,7 @@ if (have_posts()) :
 
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large-thumbnail'); ?></a>
 
-            <p class="post-info"><?php the_category( ' / ' ); ?> <?php the_time('d M, Y'); ?></p>
+            <p class="post-info"><?php the_category( ' / ' );?> <?php the_time('d M, Y'); ?></p>
 
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 

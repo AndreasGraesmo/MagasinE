@@ -15,7 +15,7 @@
     
 
 <div class="ingress">
-   <h4><?php the_field('tekst1'); ?></h4>
+   <p><?php the_field('tekst1'); ?></p>
                 </div>
     
     <div class="byline">
