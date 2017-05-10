@@ -18,6 +18,8 @@
     <p><?php the_field('tekst1'); ?></p>
         
     </div>
+    <p class="post-info"><?php the_category( ' ' ); ?> &nbsp;<?php the_time('d M, Y'); ?> <br>
+                </p>
     
     <div class=byline>
             
