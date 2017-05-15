@@ -641,6 +641,10 @@ img {
 /*
 /* STARTER HER */
 
+#single-fembakka p a {
+    color: #F08001; 
+}
+
 #fotowrap {
     overflow: hidden;
 }
@@ -649,6 +653,7 @@ img {
     font-size: 1.1em;
     line-height: 1.5em;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 .right-entry-content {
@@ -841,6 +846,10 @@ img {
 /*
 /*
 /* STARTER HER */
+
+#single-videorep p a {
+    color: #F08001; 
+}
 
 #video {
     width: 100%;

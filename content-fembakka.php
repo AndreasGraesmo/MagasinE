@@ -6,6 +6,9 @@
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    
+    <div id="single-fembakka" >
+    
     <header class="entry-header">
         
         <h1 class="entry-title"><?php the_title(); ?></h1>
@@ -17,6 +20,9 @@
 <div class="ingress">
    <p><?php the_field('tekst1'); ?></p>
                 </div>
+    
+     <p class="post-info"><?php the_category( ' / ' ); ?> &nbsp;<?php the_time('d M, Y'); ?> <br>
+                </p>
     
     <div class="byline">
         
@@ -116,6 +122,8 @@
              
             </div>
     </div>
+        
+        </div>
             
      <div class="relevantarticles">
 
