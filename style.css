@@ -44,6 +44,9 @@ transition: 0.5s ease}
     color:skyblue;
 } */
 
+#hoverhdbilde p, #hoverpostbilder p {
+    display: inline;
+}
 
 
 p {
@@ -129,6 +132,10 @@ article.under-post {
 
 #hoverhdbilde p {
     margin-top: 0;
+}
+
+#hoverhdbilde {
+    margin-bottom: 15px;
 }
 
 #hoverpostbilder p {
