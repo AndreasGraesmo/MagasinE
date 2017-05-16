@@ -7,7 +7,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
    
-    <div id="single-videorep" class="content-wrapper">
+    <div id="single-videorep">
     
     <header class="entry-header">
         

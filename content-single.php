@@ -58,7 +58,7 @@ if (have_posts()) :
     </div>
                 <div class="content">    
                     <?php the_content(); ?> 
-                    <?php the_field('tekst1a'); ?>
+                    <?php the_field('tekst1'); ?>
                 </div>
 
             </div>
