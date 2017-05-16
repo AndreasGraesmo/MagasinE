@@ -7,7 +7,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     
-    <div id="single-fembakka" >
+    <div id="single-fembakka">
     
     <header class="entry-header">
         

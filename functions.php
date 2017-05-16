@@ -106,7 +106,7 @@ function video_rep_init() {
     'public' => true,
     'show_ui' => true,
     'capability_type' => 'post',
-    'hierarchical' => false,
+    'hierarchical' => true,
     'query_var' => true,
     'menu_icon' => 'dashicons-video-alt2',
     'taxonomies' => array('category'),    
@@ -122,10 +122,24 @@ function video_rep_init() {
 add_action('init', 'video_rep_init' );
 
 function add_post_types_to_loop($query) {
-    if ($query->is_main_query() && $query->is_front_page()) {
-        $query->set('post_type', array('post', 'fotorep', 'fotorepslideshow', 'fembakka', 'videorep'));
+    if ($query->is_main_query() && $query->front_page()) {
+        $query->set('post_type', array('post', 'fotorep', 'fembakka', 'videorep'));
     }
 }
+
+wp_reset_query();
+
+function themeprefix_show_cpt_archives( $query ) {
+ if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+ $query->set( 'post_type', array(
+ 'post', 'nav_menu_item', 'fotorep', 'fembakka', 'videorep'
+ ));
+ return $query;
+ }
+}
+add_filter( 'pre_get_posts', 'themeprefix_show_cpt_archives' );
+
+
 
 
 
@@ -140,4 +154,5 @@ $items .= '</li>';
 return $items;
 }
 add_filter('wp_nav_menu_items','add_search_to_wp_menu',10,2);
+
 ?>
